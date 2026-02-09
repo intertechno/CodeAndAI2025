@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<p>Number 1:</p>
+<input type="number" id="num1" />
+
+<p>Number 2:</p>
+<input type="number" id="num2" />
+
+<button id="calculateButton">Calculate sum</button>
+
+<script>
+    const btn = document.getElementById("calculateButton");
+    btn.addEventListener("click", () => {
+
+        const number1 = document.getElementById("num1").value;
+        const number2 = document.getElementById("num2").value;
+        const sum = parseInt(number1) + parseInt(number2);
+
+        alert("The sum is: " + sum);
+    });
+</script>
+
+<!--
+@for (int i = 0; i < 10; i++)
+{
+    <p>@i</p>
+}
+-->

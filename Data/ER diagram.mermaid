@@ -1,0 +1,38 @@
+erDiagram
+    CUSTOMERS {
+        int customer_id PK
+        varchar first_name
+        varchar last_name
+        varchar email
+        varchar phone
+        datetime created_at
+    }
+
+    PRODUCTS {
+        int product_id PK
+        varchar product_name
+        varchar sku
+        decimal unit_price
+        int stock_quantity
+        datetime created_at
+    }
+
+    ORDERS {
+        int order_id PK
+        int customer_id FK
+        datetime order_date
+        varchar status
+        decimal total_amount
+    }
+
+    ORDER_ITEMS {
+        int order_item_id PK
+        int order_id FK
+        int product_id FK
+        int quantity
+        decimal unit_price
+    }
+
+    CUSTOMERS ||--o{ ORDERS : places
+    ORDERS ||--o{ ORDER_ITEMS : contains
+    PRODUCTS ||--o{ ORDER_ITEMS : includes

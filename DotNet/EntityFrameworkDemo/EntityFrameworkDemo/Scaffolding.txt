@@ -1,0 +1,13 @@
+Instructions on scaffolding the Entity Framework database objects
+-----------------------------------------------------------------
+
+1. Install NuGet packages:
+
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.Design
+
+
+2. Run the scaffolding:
+
+dotnet ef dbcontext scaffold "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;Encrypt=false;" Microsoft.EntityFrameworkCore.SqlServer -o Models

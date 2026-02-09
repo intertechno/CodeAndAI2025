@@ -1,0 +1,7 @@
+order_id,customer,city,order_date,amount,quantity,channel,email
+1001,  Alice  ,Helsinki ,2025-01-05,"€1,200.50",2,Web,alice@example.com
+1002,bob, helsinki,01/06/2025,1200,1,web,Bob@Example.com
+1003,Charlie,Espoo,2025/01/07, ,3,Store,charlie@example.com
+1003,Charlie,Espoo,2025/01/07, ,3,Store,charlie@example.com
+1004,Dana,Vantaa,2025-13-01,"1.050,00 €",1,In-Store,dana@example
+1005,Eve,Turku,2025-01-09,-50,1,WEB,eve@example.com
