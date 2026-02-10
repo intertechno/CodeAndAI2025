@@ -33,3 +33,6 @@
 /DotNet/StringPerformance/bin/Debug/net10.0
 /DotNet/StringPerformance/obj
 /Python/__pycache__
+/DotNet/WebAppWithUnitTests/.vs/WebAppWithUnitTests.slnx
+/DotNet/WebAppWithUnitTests/WebAppWithUnitTests/bin/Debug/net10.0
+/DotNet/WebAppWithUnitTests/WebAppWithUnitTests/obj
